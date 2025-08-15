@@ -1,0 +1,143 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-text font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-extrabold;
+    line-height: 1.1;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+    line-height: 1.3;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl font-medium;
+    line-height: 1.4;
+  }
+  
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+  
+  .lead {
+    @apply text-lg md:text-xl font-normal;
+  }
+
+  .display {
+    @apply text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter;
+  }
+  
+  .small-text {
+    @apply text-sm font-medium tracking-wide;
+  }
+  
+  .tiny-text {
+    @apply text-xs font-semibold tracking-widest uppercase;
+  }
+
+  /* Reset focus styles for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-semibold transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary/90;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-secondary text-white hover:bg-secondary/90;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent border border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  
+  .btn-outline-light {
+    @apply bg-transparent border border-white text-white hover:bg-white hover:text-primary;
+  }
+
+  .hero-dot-pattern {
+    background-image: radial-gradient(circle, rgba(23, 23, 23, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg;
+  }
+  
+  .section-title {
+    @apply font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6 tracking-tight;
+  }
+  
+  .section-subtitle {
+    @apply font-heading font-medium text-xl md:text-2xl text-gray-600 mb-10;
+  }
+  
+  .code {
+    @apply font-mono text-sm bg-gray-100 px-1 py-0.5 rounded;
+  }
+
+  /* Readable body copy for descriptions */
+  .body-copy {
+    @apply text-[15.5px] md:text-base text-gray-600 leading-8 tracking-[0.01em];
+  }
+
+  /* Balanced, clear bulleted lists */
+  .bulleted {
+    @apply list-disc pl-5 text-gray-700/90 leading-7 space-y-2.5 marker:text-primary/70;
+  }
+}
+
+/* For users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,158 @@
+Professional React 19 Portfolio Website – Development Instructions
+==================================================================
+
+Project Overview
+----------------
+Create a modern, responsive portfolio web app that highlights your ReactJS projects, personal information, and professional links. The site must deliver flawless UI/UX, elegant animations, and seamless mobile compatibility to impress potential employers instantly.
+
+Technology Stack
+----------------
+• React 19 (JavaScript) using Vite  
+• Tailwind CSS for utility-first styling  
+• shadcn/ui component library  
+• Magic UI animated components  
+• Framer Motion for page and element animations  
+• ESLint + Prettier for code quality  
+• EmailJS for contact-form delivery  
+
+Quick-Start Commands
+--------------------
+npm create vite@latest portfolio-website -- --template react
+cd portfolio-website
+npm install
+
+# Styling and UI
+npm install tailwindcss @tailwindcss/vite
+npm install clsx tailwind-merge
+npm install lucide-react
+
+# Animation
+npm install framer-motion
+npm install gsap
+npm install lenis @studio-freight/lenis
+
+# Form handling & validation
+npm install react-hook-form
+npm install zod @hookform/resolvers
+
+# Icons & assets
+npm install react-icons @radix-ui/react-icons
+
+# Email service
+npm install emailjs-com
+
+# Dev tools
+npm install -D autoprefixer postcss
+
+Essential Folder Structure
+--------------------------
+src/
+├── components/
+│   ├── ui/             # shadcn components
+│   ├── magicui/        # Magic UI
+│   ├── layout/
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   └── Navigation.jsx
+│   ├── sections/
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Experience.jsx
+│   │   └── Contact.jsx
+│   └── animations/
+│       ├── ScrollReveal.js
+│       ├── TextAnimation.js
+│       └── ParallaxSection.js
+├── hooks/
+├── lib/
+├── data/
+└── styles/
+
+Design & UX Guidelines
+----------------------
+1. Minimalist aesthetic with 2–3 brand colors.  
+2. Clear hierarchy: bold headings, legible body text.  
+3. Mobile-first breakpoints (sm 640 px → 2xl 1536 px).  
+4. Intuitive nav with smooth scrolling and active link cues.  
+5. Respect `prefers-reduced-motion` for accessibility.
+
+Key Sections
+------------
+Hero  
+• Animated introduction (typing or fade-in).  
+• Headshot with subtle scale/tilt.  
+• Action buttons: résumé download & "View Projects."  
+• Social icons (GitHub, LinkedIn, X).  
+
+About  
+• Brief bio + personal photo.  
+• Core values & passion highlights.  
+• Résumé link.
+
+Skills  
+• Tech icons and animated proficiency bars or rings.  
+• Tooltips on hover for clarity.
+
+Projects  
+• Masonry or grid list with filters.  
+• Card hover zoom + stack badges.  
+• Links: Live Demo & GitHub.  
+
+Experience  
+• Timeline with company logos, roles, dates, & bullet achievements.
+
+Contact  
+• React Hook Form + Zod validation.  
+• EmailJS submission with toast feedback.  
+• Location text & social links.
+
+Animation Strategy
+------------------
+• GSAP ScrollTrigger for section reveals, parallax backgrounds, counters.  
+• Framer Motion for page-level transitions, interactive button states, and modal fades.  
+• Magic UI background beams, gradient cards, and particle overlays for visual flair.  
+
+Performance Checklist
+---------------------
+□ Split code with dynamic `import()` for heavy components.  
+□ Compress and lazy-load images (WebP/AVIF with fallbacks).  
+□ Use React 19 Automatic Compiler optimizations.  
+□ Analyze bundle (`npm run build -- --stats`).  
+
+Accessibility
+-------------
+• Semantic HTML and ARIA labels.  
+• Keyboard-navigable menu and interactive elements.  
+• Sufficient color contrast and focus outlines.
+
+Deployment & SEO
+----------------
+• Prefer Vercel or Netlify for free CI/CD.  
+• Add canonical URL, Open Graph tags, and JSON-LD schema.  
+• Generate sitemap.xml & robots.txt.  
+• Optimize Core Web Vitals.
+
+Implementation Timeline
+-----------------------
+Week 1  Foundation – project setup, routing, global styles.  
+Week 2  Core UI – Hero, About, Skills, Projects, Contact w/ static data.  
+Week 3  Enhancements – animations, filtering, mobile nav, performance tuning.  
+Week 4  Polish & Deploy – SEO, accessibility, cross-device testing, analytics.
+
+Quality-Assurance Gate
+----------------------
+□ Animations run < 60 fps on mobile.  
+□ All forms validate + send.  
+□ No console errors or 404s.  
+□ Lighthouse scores ≥ 90 across metrics.  
+□ WCAG 2.1 AA compliance.  
+□ Social links & résumé download work.
+
+Future Upgrades
+---------------
+• Add Markdown blog via Content Layer or MDX.  
+• Dark-mode toggle with persisted preference.  
+• Internationalization (i18n).  
+• Analytics via Plausible or PostHog. 
