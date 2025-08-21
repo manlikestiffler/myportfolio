@@ -13,27 +13,24 @@ const About = () => {
         
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
-            <div className="space-y-8">
-              <div className="text-center mb-2">
+            <div className="space-y-6">
+              <div className="mb-1">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">
                   Computer Engineer | JavaScript Enthusiast | Problem-Solver
                 </h3>
               </div>
               
-              <p className="lead text-center">
+              <p className="body-copy-tight">
                 I'm a passionate developer with hands-on experience in building real-world apps for inventory systems, IoT platforms, and mobile solutions. I specialize in JavaScript (React) and am expanding into React Native to build for mobile users as well.
               </p>
               
-              <p className="body-copy">
-                I've independently built and deployed multiple web apps that solve real problems in agriculture, retail, and water safety.
-                My approach to development is centered around writing clean, maintainable code that delivers 
-                exceptional user experiences. I enjoy solving complex problems and continuously learning about 
-                new technologies and best practices in the ever-evolving web development landscape.
+              <p className="body-copy-tight">
+                I've independently built and deployed multiple web apps that solve real problems in agriculture, retail, and water safety. My approach to development is centered around writing clean, maintainable code that delivers exceptional user experiences. I enjoy solving complex problems and continuously learning about new technologies and best practices in the ever-evolving web development landscape.
               </p>
               
-              <div className="py-2">
-                <h4 className="text-xl font-semibold tracking-tight text-gray-900 mb-4">Skills</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="pt-1">
+                <h4 className="text-xl font-semibold tracking-tight text-gray-900 mb-3">Skills</h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   {[
                     "Clean, efficient code",
                     "Responsive design",
@@ -50,7 +47,7 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="pt-6 flex justify-center">
+              <div className="pt-4 flex">
                 <a 
                   href="/resume.pdf"
                   target="_blank"

@@ -122,6 +122,11 @@ html {
     @apply text-[15.5px] md:text-base text-gray-600 leading-8 tracking-[0.01em];
   }
 
+  /* Denser, higher-contrast body copy */
+  .body-copy-tight {
+    @apply text-[15.5px] md:text-[16px] text-gray-700 leading-7 tracking-[0.005em];
+  }
+
   /* Balanced, clear bulleted lists */
   .bulleted {
     @apply list-disc pl-5 text-gray-700/90 leading-7 space-y-2.5 marker:text-primary/70;

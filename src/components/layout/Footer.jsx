@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail, MapPin } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   // Get current year for copyright
@@ -6,10 +6,8 @@ const Footer = () => {
 
   // Social links
   const socialLinks = [
-    { icon: <Github className="w-5 h-5" />, href: 'https://github.com/yourusername', ariaLabel: 'GitHub Profile' },
-    { icon: <Linkedin className="w-5 h-5" />, href: 'https://linkedin.com/in/yourusername', ariaLabel: 'LinkedIn Profile' },
-    { icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com/yourusername', ariaLabel: 'Twitter Profile' },
-    { icon: <Mail className="w-5 h-5" />, href: 'mailto:your.email@example.com', ariaLabel: 'Email Me' },
+    { icon: <Github className="w-5 h-5" />, href: 'https://github.com/manlikestiffler', ariaLabel: 'GitHub Profile' },
+    { icon: <Linkedin className="w-5 h-5" />, href: 'https://linkedin.com/in/tinashe-gomo-15a899258', ariaLabel: 'LinkedIn Profile' },
   ];
 
   // Navigation links
@@ -35,14 +33,14 @@ const Footer = () => {
             </p>
             <div className="flex items-center text-gray-300 mb-2">
               <MapPin className="w-5 h-5 mr-2" />
-              <span>City, Country</span>
+              <span>Harare, Zimbabwe</span>
             </div>
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:tinashegomo00@outlook.com" 
               className="flex items-center text-gray-300 hover:text-primary transition-colors"
             >
               <Mail className="w-5 h-5 mr-2" />
-              <span>your.email@example.com</span>
+              <span>tinashegomo00@outlook.com</span>
             </a>
           </div>
           
@@ -93,7 +91,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="pt-8 mt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>© {currentYear} Your Name. All rights reserved.</p>
+          <p>© {currentYear} Tinashe Gomo. All rights reserved.</p>
           <p className="mt-2 text-sm">
             Built with <span className="text-red-500">♥</span> using React & Tailwind CSS
           </p>

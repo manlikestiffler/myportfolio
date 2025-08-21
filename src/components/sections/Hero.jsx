@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowDown, Github, Linkedin } from 'lucide-react';
 import Hyperspeed from '../magicui/Hyperspeed';
 import { hyperspeedPresets } from '../magicui/hyperspeed-presets';
 // Import profile image

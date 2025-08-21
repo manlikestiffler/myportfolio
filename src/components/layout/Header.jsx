@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Twitter } from 'lucide-react';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,9 +31,8 @@ const Header = () => {
 
   // Social links
   const socialLinks = [
-    { icon: <Github className="w-5 h-5" />, href: 'https://github.com/yourusername', ariaLabel: 'GitHub Profile' },
+    { icon: <Github className="w-5 h-5" />, href: 'https://github.com/manlikestiffler', ariaLabel: 'GitHub Profile' },
     { icon: <Linkedin className="w-5 h-5" />, href: 'https://linkedin.com/in/yourusername', ariaLabel: 'LinkedIn Profile' },
-    { icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com/yourusername', ariaLabel: 'Twitter Profile' },
   ];
 
   return (
